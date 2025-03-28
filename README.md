@@ -1,5 +1,3 @@
-# Banking-System
-
 # Banking System Project
 
 ## Overview
@@ -36,6 +34,37 @@ The project consists of:
    - Implements the user interface for account management.
    - Uses a menu-driven approach for user interaction.
 
+## Programming Concepts Used
+1. **Object-Oriented Programming (OOP)**
+   - **Encapsulation**: The `account` class encapsulates data and methods.
+   - **Abstraction**: Users interact with methods without worrying about internal implementation.
+   - **Modularity**: The class structure helps in code organization and reusability.
+
+2. **File Handling**
+   - **Binary File Operations**: `write_account()`, `display_sp()`, `modify_account()`, etc., use file I/O for data persistence.
+   - **Reading and Writing**: Uses `ifstream` and `ofstream` for handling bank account records.
+
+3. **Data Structures**
+   - **Class (`account`)**: Serves as a structured data model.
+   - **Sequential File Storage**: Accounts are stored as records in a binary file.
+
+4. **Control Structures**
+   - **Loops**: Used for menu iteration and account searching.
+   - **Conditional Statements**: `if-else` and `switch` statements drive user actions.
+
+5. **Functions & Methods**
+   - **Encapsulated Member Functions**: Methods inside the `account` class handle various account operations.
+   - **Standalone Functions**: Global functions manage file operations and user interaction.
+
+6. **Basic Algorithmic Concepts**
+   - **CRUD Operations**: The system follows Create, Read, Update, and Delete operations for accounts.
+   - **Linear Search**: Used for finding accounts in a file.
+   - **Transaction Processing**: Handles deposits and withdrawals with file updates.
+
+7. **Complexity Analysis**
+   - **Time Complexity Consideration**: Analyzed for each operation in the project.
+   - **Space Complexity Consideration**: Efficient storage by using binary files.
+
 ## Algorithm
 1. **Account Creation**
    - Input account details.
@@ -61,7 +90,7 @@ The project consists of:
 | Delete Account       | O(n)            | O(1)            |
 | Display All Accounts | O(n)            | O(1)            |
 
-##  We will make Future Improvements
+## Future Improvements
 - **Relational Database Integration**: Replace file storage with MySQL or PostgreSQL for better scalability and efficiency.
 - **User Authentication**: Implement a secure login system.
 - **Graphical User Interface (GUI)**: Develop a user-friendly interface using Qt or Tkinter.
